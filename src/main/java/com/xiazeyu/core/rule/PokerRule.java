@@ -1,10 +1,5 @@
 package com.xiazeyu.core.rule;
 
-import com.xiazeyu.core.data.EffectivePoker;
-import com.xiazeyu.core.data.SinglePoker;
-
-import java.util.List;
-
 public class PokerRule {
 
 
@@ -21,14 +16,6 @@ public class PokerRule {
      * 8、一对，比较对子大小 -> 比较最高张大小 -> 比较第2高张大小 -> 比较第3高张大小
      * 9、单张，比较最高张大小 -> 比较第2高张大小 -> 比较第3高张大小 -> 比较第4高张大小 -> 比较第5高张大小
      *
-     * @param effectivePoker1
-     * @param effectivePoker2
-     * @return
      */
-    public static boolean isLarge(EffectivePoker effectivePoker1, EffectivePoker effectivePoker2) {
-        List<SinglePoker> singlePokers1 = effectivePoker1.orderPoker();
-        List<SinglePoker> singlePokers2 = effectivePoker2.orderPoker();
-        return false;
-    }
 
 }

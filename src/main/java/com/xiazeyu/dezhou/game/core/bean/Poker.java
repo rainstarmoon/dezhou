@@ -1,6 +1,7 @@
 package com.xiazeyu.dezhou.game.core.bean;
 
-import com.xiazeyu.dezhou.game.core.constants.Color;
+import com.xiazeyu.dezhou.game.core.bean.enums.Color;
+import com.xiazeyu.dezhou.game.core.bean.enums.Point;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -11,7 +12,7 @@ public class Poker implements Comparable<Poker> {
     /**
      * 点数
      */
-    private int point;
+    private Point point;
 
     /**
      * 花色
@@ -23,6 +24,10 @@ public class Poker implements Comparable<Poker> {
      */
     @Override
     public int compareTo(Poker o) {
-        return o.point - this.point;
+        int pointCompare = o.point.getValue() - this.point.getValue();
+        if (pointCompare != 0) {
+            return pointCompare;
+        }
+        return o.color.getValue() - this.color.getValue();
     }
 }

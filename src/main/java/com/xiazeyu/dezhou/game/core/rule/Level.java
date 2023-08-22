@@ -2,10 +2,13 @@ package com.xiazeyu.dezhou.game.core.rule;
 
 import com.xiazeyu.dezhou.game.core.aggregate.ShapingPoker;
 import com.xiazeyu.dezhou.game.core.bean.Poker;
+import com.xiazeyu.dezhou.game.core.bean.enums.Point;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Getter
 @AllArgsConstructor
@@ -57,10 +60,10 @@ public enum Level {
 
     public static Level formatLevel(ShapingPoker shapingPoker) {
         List<Poker> list = shapingPoker.getList();
+        Map<Point, List<Poker>> pointPokerMap = new HashMap<>();
 
 
         return null;
     }
-
 
 }

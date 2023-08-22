@@ -5,9 +5,12 @@ import lombok.Data;
 
 import java.util.List;
 
+/**
+ * 成牌
+ * 5张
+ */
 @Data
 public class ShapingPoker {
 
     private List<Poker> list;
-
 }

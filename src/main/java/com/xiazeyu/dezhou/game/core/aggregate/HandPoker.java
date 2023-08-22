@@ -5,6 +5,10 @@ import lombok.Data;
 
 import java.util.List;
 
+/**
+ * 手牌
+ * 2张
+ */
 @Data
 public class HandPoker {
 

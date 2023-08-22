@@ -12,16 +12,15 @@ import java.util.Set;
  */
 public class PokerLibrary {
 
+    /**
+     * 全量组合
+     */
     private static final Set<ShapingPoker> poker_library = new HashSet<>();
 
-    private static final Map<Level, Map<ShapingPoker, Integer>> library = new HashMap<>();
-
-    static {
-        for (Level value : Level.values()) {
-
-
-        }
-    }
+    /**
+     * 分类组合
+     */
+    private static final Map<Level, Map<ShapingPoker, Integer>> level_poker_library = new HashMap<>();
 
 
 }
